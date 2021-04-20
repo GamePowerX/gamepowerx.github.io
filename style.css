@@ -1,0 +1,46 @@
+body {
+    background-color: gold;
+   }
+   a {
+    text-decoration: none;
+   }
+   #title {
+    font-family:  Sans-serif;
+    text-align: center;
+   }
+   #copyright {
+    color: grey;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+   }
+   .menu {
+    color: white;
+    background-color: black;
+    font-family: Courier New;
+    border: solid;
+    border-radius: 5px;
+   }
+   #info {
+    font-family: Papyrus;
+    font-size: 20px;
+   }
+   .download {
+     font-family: Papyrus;
+     color: white;
+     background-color: blue;
+     border: solid;
+     border-radius: 5px;
+   }
+   p.download {
+    text-align: left;
+    width: 100px;
+   }
+   #email {
+    font-family: Papyrus;
+    font-size: 15px;
+   }
+   #loginMsg {
+    color: red;
+    font-family: Courier New;
+   }
