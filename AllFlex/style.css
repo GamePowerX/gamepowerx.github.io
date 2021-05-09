@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(77, 2, 199);
+    color: white;
+}
+#title {
+    font-family:  Sans-serif;
+    text-align: center;
+}
+#copyright {
+    color: grey;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+#download {
+    color: gold;
+    background-color: black;
+    border: solid;
+    border-radius: 5px;
+}
