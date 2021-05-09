@@ -35,10 +35,12 @@ x
   border: solid;
   border-radius: 3px;
 }
-p.download {
-  text-align: left;
-  width: 100px;
-}
+.download{
+  font-family:Papyrus;
+  color:#fff;
+  background-color:blue;
+  border:solid;
+  border-radius:5px}
 #email {
   font-family: Papyrus;
   font-size: 15px;
