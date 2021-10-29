@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        window.location.replace("https://www.youtube.com/channel/UCXJbfd5NYWVjWYbujTKOc-g");
+    </script>
+    <meta http-equiv="refresh" content="7; url='https://www.youtube.com/channel/UCXJbfd5NYWVjWYbujTKOc-g'" />
+  </head>
+  <body>
+    <p>Bitte <a href=https://www.youtube.com/channel/UCXJbfd5NYWVjWYbujTKOc-g">diesen Link</a> anklicken!</p>
+  </body>
+</html>

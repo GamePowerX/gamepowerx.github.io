@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        window.location.replace("https://github.com/CraftingDragon007");
+    </script>
+    <meta http-equiv="refresh" content="7; url='https://github.com/CraftingDragon007'" />
+  </head>
+  <body>
+    <p>Bitte <a href=https://github.com/CraftingDragon007">diesen Link</a> anklicken!</p>
+  </body>
+</html>
