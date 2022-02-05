@@ -5,7 +5,7 @@ a {
   text-decoration: none;
 }
 #title {
-  font-family:  Sans-serif;
+  font-family: Sans-serif, serif;
   text-align: center;
 }
 #copyright {
@@ -18,15 +18,14 @@ a {
 .menu {
   color: white;
   background-color: black;
-  font-family: Courier New;
+  font-family: Courier New, serif;
   border: solid;
   border-radius: 5px;
 }
-#info {
-  font-family: Papyrus;
-  font-size: 20px;
+.info {
+  font-family: JetBrains Mono, serif;
+  font-size: 30px;
 }
-x
 #login {
   opacity: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -36,16 +35,12 @@ x
   border-radius: 3px;
 }
 .download{
-  font-family:Papyrus;
+  font-family: JetBrains Mono, serif;
   color:#fff;
   background-color:blue;
   border:solid;
   border-radius:5px}
-#email {
-  font-family: Papyrus;
+.email {
+  font-family: JetBrains Mono, serif;
   font-size: 15px;
-}
-#loginMsg {
-  color: red;
-  font-family: Courier New;
 }
