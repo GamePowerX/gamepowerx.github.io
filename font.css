@@ -2,7 +2,13 @@
     font-family: 'Jetbrains Mono';
     font-style: normal;
     font-weight: 400;
-    src: url(/JetBrainsMono-Regular.woff2) format("woff2");
+    src: url(/JetBrainsMono-Regular.eot);
+    src: url(/JetBrainsMono-Regular.eot?#iefix) format('embedded-opentype'),
+        url(/JetBrainsMono-Regular.woff2) format('woff2'),
+        url(/JetBrainsMono-Regular.woff) format('woff'),
+        url(/JetBrainsMono-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Courier New';
