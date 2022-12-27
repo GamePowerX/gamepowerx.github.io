@@ -1,6 +1,6 @@
 body {
     background-color: gold;
-   }
+}
 a {
   text-decoration: none;
 }
@@ -10,9 +10,12 @@ a {
 }
 #copyright {
   color: grey;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
+  position: fixed;
+  bottom: 1%;
+  height: 0;
+  max-height: 0%;
+  text-align: left;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 .menu {
@@ -43,4 +46,21 @@ a {
 .email {
   font-family: JetBrains Mono, serif;
   font-size: 15px;
+}
+.seperator {
+  font-family: JetBrains Mono, serif;
+  font-size: 15px;
+  color: grey;
+}
+.dlinfo {
+  font-family: JetBrains Mono, serif;
+  font-size: 15px;
+}
+.infoButton {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: rgb(0, 204, 255);
+  background-color: black;
+  border: solid;
+  border-radius: 5px;
 }
