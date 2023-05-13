@@ -1,24 +1,18 @@
-
 function toggleMode() {
-    var mode = localStorage.getItem('mode');
-    if (mode === null) {
-        mode = 'light';
-    }
+    var mode = localStorage.getItem('mode') || 'light';
     if (mode === 'light') {
         mode = 'dark';
         var link = document.createElement('link');
         link.rel = 'stylesheet';
         link.href = 'darkmode.css';
         document.head.appendChild(link);
-        var button = document.getElementById('toggle');
-        button.innerHTML = 'Light Mode';
     } else {
         mode = 'light';
-        document.head.removeChild(document.head.lastChild);
-        var button = document.getElementById('toggle');
-        button.innerHTML = 'Dark Mode';
+        document.head.removeChild(document.head.lastElementChild);
     }
     localStorage.setItem('mode', mode);
+    var button = document.getElementById('toggle');
+    button.innerHTML = mode === 'light' ? 'Dark Mode' : 'Light Mode';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -36,9 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.head.appendChild(link);
         var button = document.getElementById('toggle');
         button.innerHTML = 'Light Mode';
-    }
-    if (mode === 'light') {
-        var button = document.getElementById('toggle');
-        button.innerHTML = 'Dark Mode';
     }
 });
