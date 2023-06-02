@@ -33,22 +33,31 @@
 <style>
   span {
     color: #ffcc00;
+    position: relative;
+    overflow: hidden;
+    padding-right: 1px;
   }
 
   span.blink::after {
-    width: 9px;
+    width: 11px;
     animation: 1s ease-in-out infinite blink;
-    margin-left: -9px;
   }
 
   span::after {
     content: "";
     display: inline-block;
     width: 2px;
-    height: 18px;
-    margin-left: -2px;
-    margin-bottom: -4px;
-    backdrop-filter: invert(100%);
+    height: 20px;
+    /* causes weird glitches */
+    /*backdrop-filter: invert(100%);*/
+
+    background-color: white;
+
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+
+    z-index: -1;
   }
 
   @keyframes blink {

@@ -22,11 +22,11 @@
             ],
             links: [
                 {
-                    url: "https://github.com/GamepowerX/kekupload-server",
+                    url: "https://github.com/GamePowerX/kekupload-server",
                     name: "kekupload_server",
                 },
                 {
-                    url: "https://github.com/GamepowerX/kekupload-client",
+                    url: "https://github.com/GamePowerX/kekupload-client",
                     name: "kekupload_client",
                 },
                 {
@@ -46,10 +46,10 @@
 </script>
 
 <svelte:head>
-    <title>GamepowerX | About</title>
+    <title>GamePowerX | About</title>
 </svelte:head>
 
-<h1>GamepowerX</h1>
+<h1>GamePowerX</h1>
 <p>Because Opensource is the Future of Tech.</p>
 
 <br />
@@ -108,25 +108,22 @@
 </div>
 
 <style>
-    hr {
-        margin: 40px 0;
-    }
-
     .projects {
         border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
         background-color: black;
         display: flex;
     }
 
     .projects ul {
         list-style: none;
-        background-color: #111;
+        background-color: #000;
         padding: 10px 10px;
         border-right: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .projects ul li {
-        color: #aaa;
+        color: #ffcc00;
         height: 20px;
         text-align: right;
     }
@@ -136,6 +133,8 @@
         white-space: nowrap;
         display: flex;
         flex-direction: column;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
 
     code span {

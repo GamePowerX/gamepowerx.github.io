@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>GamepowerX | Downloads</title>
+  <title>GamePowerX | Downloads</title>
 </svelte:head>
 
 <h1>Downloads</h1>

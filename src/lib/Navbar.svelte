@@ -28,6 +28,7 @@
     height: 50px;
     z-index: 100;
     background: black;
+    border-bottom: 1px solid transparent;
   }
 
   nav.detach {

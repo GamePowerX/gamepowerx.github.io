@@ -4,16 +4,17 @@
   <section>
     <section>
       <ul>
-        <p>GamepowerX</p>
+        <p>GamePowerX</p>
         <li><a href="/">about_us()</a></li>
         <li><a href="/downloads">downloads()</a></li>
         <li><a href="/join">join_us()</a></li>
+        <li><a href="/brand">brand()</a></li>
       </ul>
 
       <ul>
         <p>Socials</p>
         <li><a href="https://discord.gg/t77MDGusmM">Discord</a></li>
-        <li><a href="https://github.com/GamepowerX">Github</a></li>
+        <li><a href="https://github.com/GamePowerX">Github</a></li>
       </ul>
     </section>
 
@@ -24,7 +25,7 @@
       <a class="kek" href="https://kotw.dev">KekOnTheWorld</a>
     </p>
 
-    <p>&copy; 2023 GamepowerX</p>
+    <p>&copy; 2023 GamePowerX</p>
   </section>
 </footer>
 
@@ -36,6 +37,7 @@
 
     display: flex;
     column-gap: 20px;
+    row-gap: 10px;
     align-items: center;
     justify-content: center;
   }
@@ -55,6 +57,12 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 25px;
+  }
+
+  @media (max-width: 500px) {
+    footer {
+      flex-direction: column;
+    }
   }
 
   ul {
