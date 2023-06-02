@@ -38,7 +38,7 @@
 
 <a
 	href="https://fontsource.org/fonts/jetbrains-mono"
-	style="font-family: 'Jetbrains Mono', sans-serif;">Jetbrains Mono</a
+	style="font-family: 'Jetbrains Mono Variable', sans-serif;">Jetbrains Mono Variable</a
 >
 
 <a
