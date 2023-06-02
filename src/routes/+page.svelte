@@ -113,7 +113,7 @@
 
 <br />
 
-<p>
+<p style="max-width: 500px">
 	We are a Github Organisation focusing on opensource software for
 
 	<Typer {words} />
