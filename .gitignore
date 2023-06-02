@@ -1,10 +1,5 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-/.idea
-/workspace.code-workspace
+node_modules/
+.svelte-kit/
+*.ts.timestamp*.mjs
+build/
+bun.lockb
