@@ -1,40 +1,44 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Jetbrains Mono", sans-serif;
-  color: #aaaaaa;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Jetbrains Mono", sans-serif;
+	color: #aaaaaa;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Alfa Slab One", sans-serif;
-  color: #ffcc00;
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Alfa Slab One", sans-serif;
+	color: #ffcc00;
+	font-weight: 400;
 }
 
 body {
-  background-color: black;
-  overflow-y: scroll;
-  overflow-x: hidden;
+	background-color: black;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 button {
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  background: transparent;
-  color: #ffcc00;
-  border: 2px solid #ffcc00;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	background: transparent;
+	color: #ffcc00;
+	border: 2px solid #ffcc00;
 }
 
 button:hover {
-  background: #ffcc00;
-  color: black;
-  border: 2px solid #aa8800;
+	background: #ffcc00;
+	color: black;
+	border: 2px solid #aa8800;
 }
 
 hr {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 40px 0;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	margin: 40px 0;
 }
