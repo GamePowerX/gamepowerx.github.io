@@ -8,11 +8,20 @@
 
 	const projects = [
 		{
-			name: "kekupload",
-			description: [
-				"KekUpload is an implementation of an HTTP app",
-				"for uploading and sharing files easily.",
+			name: "gamepowerx.com",
+			license: "MIT",
+			description: ["This website and its brand resources are opensource"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/gamepowerx.github.io",
+					name: "github",
+				},
 			],
+		},
+		{
+			name: "kekupload",
+			license: "MIT",
+			description: ["KekUpload is a HTTP application", "for uploading and sharing files easily."],
 			links: [
 				{
 					url: "https://github.com/GamePowerX/kekupload-server",
@@ -23,14 +32,76 @@
 					name: "kekupload_client",
 				},
 				{
+					url: "https://github.com/GamePowerX/kekupload-lib-ts",
+					name: "kekupload_lib_ts",
+				},
+				{
 					url: "https://upload.gamepowerx.com",
 					name: "demo",
 				},
 			],
 		},
+		{
+			name: "svelte-ogl",
+			license: "MIT",
+			description: ["SvelteOGL is a typed port of OGL", "(Open Graphics Library) to svelte"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/svelte-ogl",
+					name: "github",
+				},
+				{
+					url: "https://gamepowerx.com/svelte-ogl/",
+					name: "demo",
+				},
+			],
+		},
+		{
+			name: "pipe-to-release",
+			license: "MIT",
+			description: [
+				"pipe-to-release is a github action for",
+				"uploading artifacts and managing releases",
+			],
+			links: [
+				{
+					url: "https://github.com/marketplace/actions/pipe-to-release",
+					name: "marketplace",
+				},
+				{
+					url: "https://github.com/GamePowerX/pipe-to-release",
+					name: "github",
+				},
+			],
+		},
+		{
+			name: "IDirekt",
+			license: "MIT",
+			description: [
+				"IDirekt is a utility to forward emails from",
+				"IServ via an external SMTP server",
+			],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/IDirekt",
+					name: "github",
+				},
+			],
+		},
+		{
+			name: "KeloCAM",
+			license: "MIT",
+			description: ["KeloCAM will be an opensource simple-to-use", "CAM software for hobbyists"],
+			links: [
+				{
+					url: "#",
+					name: "soon_tm",
+				},
+			],
+		},
 	];
 
-	const lines = 5 + projects.reduce((p, v) => p + 2 + v.description.length + v.links.length, 0);
+	const lines = 4 + projects.reduce((p, v) => p + 3 + v.description.length + v.links.length, 0);
 </script>
 
 <svelte:head>
@@ -70,13 +141,14 @@
 
 		<span />
 
-		{#each projects as project}
+		{#each projects as project, i}
 			{#each project.description as description}
 				<span class="comment"> // {description}</span>
 			{/each}
 
 			<span>
 				<span class="func">declare</span>(<span class="string">"{project.name}"</span>,
+				<span class="string">"{project.license}"</span>,
 				<span class="keyword">function</span>() &lbrace;
 			</span>
 
@@ -87,6 +159,9 @@
 				</span>
 			{/each}
 			<span>&rbrace;);</span>
+			{#if i + 1 !== projects.length}
+				<span />
+			{/if}
 		{/each}
 	</code>
 </div>
@@ -101,7 +176,6 @@
 
 	.projects ul {
 		list-style: none;
-		background-color: #000;
 		padding: 10px 10px;
 		border-right: 1px solid rgba(255, 255, 255, 0.3);
 	}

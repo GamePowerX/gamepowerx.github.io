@@ -17,7 +17,7 @@
 		if (write.length >= words[word].length) {
 			blink = true;
 
-			setTimeout(nextWord, 2000 + 5000 * Math.random());
+			setTimeout(nextWord, 4000 + 3000 * Math.random());
 		} else {
 			write += words[word][write.length];
 

@@ -13,8 +13,8 @@
 		</a>
 
 		<a class:active={$page.url.pathname === "/"} href="/">About</a>
-		<a class:active={$page.url.pathname === "/join"} href="/join">Join</a>
-		<a class:active={$page.url.pathname === "/downloads"} href="/downloads">Downloads</a>
+		<a class:active={$page.url.pathname === "/join/"} href="/join">Join</a>
+		<a class:active={$page.url.pathname === "/downloads/"} href="/downloads">Downloads</a>
 	</div>
 </nav>
 
@@ -35,7 +35,7 @@
 
 	div {
 		height: 100%;
-		max-width: 600px;
+		max-width: 800px;
 		margin: auto;
 		display: flex;
 		align-items: center;

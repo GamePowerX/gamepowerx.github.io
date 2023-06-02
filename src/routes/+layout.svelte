@@ -23,8 +23,14 @@
 <style>
 	main {
 		padding: 60px 30px;
-		max-width: 600px;
+		max-width: 800px;
 		min-height: 80vh;
 		margin: auto;
+	}
+
+	@media (min-width: 700px) {
+		main {
+			padding: 90px 30px;
+		}
 	}
 </style>
