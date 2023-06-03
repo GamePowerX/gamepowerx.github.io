@@ -51,7 +51,7 @@
 		/* causes weird glitches */
 		/*backdrop-filter: invert(100%);*/
 
-		background-color: white;
+		background-color: #aaaaaa;
 
 		position: absolute;
 		right: 0;
