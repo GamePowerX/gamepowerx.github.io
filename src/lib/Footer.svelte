@@ -4,7 +4,7 @@
 	<section>
 		<section>
 			<ul>
-				<p>GamePowerX</p>
+				<li><p>GamePowerX</p></li>
 				<li><a href="/">about_us()</a></li>
 				<li><a href="/downloads">downloads()</a></li>
 				<li><a href="/join">join_us()</a></li>
@@ -12,7 +12,7 @@
 			</ul>
 
 			<ul>
-				<p>Socials</p>
+				<li><p>Socials</p></li>
 				<li><a href="https://discord.gg/t77MDGusmM">Discord</a></li>
 				<li><a href="https://github.com/GamePowerX">Github</a></li>
 			</ul>
@@ -72,7 +72,7 @@
 		flex-direction: column;
 	}
 
-	ul > p {
+	ul > li > p {
 		color: #ffcc00;
 		font-weight: 600;
 	}
