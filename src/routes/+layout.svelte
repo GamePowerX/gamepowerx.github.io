@@ -22,7 +22,7 @@
 
 <style>
 	main {
-		padding: 60px 30px;
+		padding: 60px 20px;
 		max-width: 800px;
 		min-height: 80vh;
 		margin: auto;

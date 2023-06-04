@@ -56,13 +56,20 @@
 
 	footer > section > section {
 		display: flex;
-		flex-wrap: wrap;
 		column-gap: 25px;
 	}
 
 	@media (max-width: 500px) {
 		footer {
 			flex-direction: column;
+		}
+
+		footer > section > section ul {
+			row-gap: 5px;
+		}
+
+		footer > section > section a {
+			padding: 5px 0;
 		}
 	}
 
