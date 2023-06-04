@@ -43,7 +43,8 @@
 	}
 
 	img {
-		max-width: 192px;
+		width: 192px;
+		height: 192px;
 	}
 
 	footer > section {
