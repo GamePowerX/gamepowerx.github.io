@@ -31,9 +31,9 @@
 
 <style>
 	footer {
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
 		align-items: center;
-		padding: 10px 0;
+		padding: 30px 0;
 
 		display: flex;
 		column-gap: 20px;
@@ -56,16 +56,24 @@
 
 	footer > section > section {
 		display: flex;
+		flex-wrap: wrap;
 		column-gap: 25px;
+		row-gap: 30px;
 	}
 
 	@media (max-width: 500px) {
 		footer {
 			flex-direction: column;
+			row-gap: 40px;
+			font-size: 18px;
+		}
+
+		footer > section > section {
+			margin-bottom: 30px;
 		}
 
 		footer > section > section ul {
-			row-gap: 5px;
+			row-gap: 10px;
 		}
 
 		footer > section > section a {
