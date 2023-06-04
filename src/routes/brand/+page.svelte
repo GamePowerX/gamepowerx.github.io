@@ -37,8 +37,8 @@
 <br />
 
 <a
-	href="https://fontsource.org/fonts/jetbrains-mono"
-	style="font-family: 'Jetbrains Mono Variable', sans-serif;">Jetbrains Mono Variable</a
+	href="https://fontsource.org/fonts/ibm-plex-mono"
+	style="font-family: 'IBM Plex Mono', sans-serif;">IBM Plex Mono</a
 >
 
 <a
