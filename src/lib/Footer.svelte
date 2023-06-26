@@ -22,7 +22,7 @@
 
 		<p>
 			Made by
-			<a class="kek" href="https://kotw.dev">KekOnTheWorld</a>
+			<a class="kek" href="https://lbirkert.com">Lucas Birkert</a>
 		</p>
 
 		<p>&copy; 2023 GamePowerX</p>
