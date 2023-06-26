@@ -27,8 +27,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/alfa-slab-one": "^5.0.2",
-		"@fontsource/ibm-plex-mono": "^5.0.2",
+		"@fontsource/alfa-slab-one": "^5.0.3",
+		"@fontsource/ibm-plex-mono": "^5.0.3",
 		"svelte-fa": "^3.0.4"
 	}
 }
