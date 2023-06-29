@@ -13,7 +13,7 @@
 
 			<ul>
 				<li><p>Socials</p></li>
-				<li><a href="https://discord.gg/t77MDGusmM">Discord</a></li>
+				<li><a href="https://discord.gg/czeW6HnRvz">Discord</a></li>
 				<li><a href="https://github.com/GamePowerX">Github</a></li>
 			</ul>
 		</section>

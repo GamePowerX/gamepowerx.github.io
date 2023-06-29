@@ -14,5 +14,5 @@
 		>info@gamepowerx.com</a
 	>
 	or contacting us on our
-	<a href="https://discord.gg/t77MDGusmM">Discord Server</a>
+	<a href="https://discord.gg/czeW6HnRvz">Discord Server</a>
 </p>
