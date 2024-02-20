@@ -10,7 +10,7 @@
 		"format": "prettier --write . --plugin-search-dir=. --ignore-path .gitignore"
 	},
 	"devDependencies": {
-		"@sveltejs/kit": "^1.26.0",
+		"@sveltejs/kit": "^1.30.4",
 		"svelte": "^3.55.1",
 		"svelte-check": "^2.10.2",
 		"svelte-preprocess": "^5.0.0",
