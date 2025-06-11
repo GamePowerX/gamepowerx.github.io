@@ -26,11 +26,14 @@ jobs:
         with:
           node-version: 22
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install JS dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3.0.0
