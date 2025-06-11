@@ -25,7 +25,7 @@
 			<a class="kek" href="https://lbirkert.com">Lucas Birkert</a>
 		</p>
 
-		<p>&copy; 2023 GamePowerX</p>
+		<p>&copy; 2025 GamePowerX</p>
 	</section>
 </footer>
 
