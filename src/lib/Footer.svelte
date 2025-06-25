@@ -15,6 +15,7 @@
 				<li><p>Socials</p></li>
 				<li><a href="https://discord.gg/czeW6HnRvz">Discord</a></li>
 				<li><a href="https://github.com/GamePowerX">Github</a></li>
+                <li><a href="https://social.gamepowerx.com">Mastodon</a></li>
 			</ul>
 		</section>
 
