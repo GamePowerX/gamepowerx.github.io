@@ -1,10 +1,10 @@
 version: 2
 updates:
-  - package-ecosystem: "pnpm"
+  - package-ecosystem: "npm"
     directory: "/"
     labels:
       - "dependencies"
-      - "pnpm"
+      - "npm"
     commit-message:
       prefix: "chore"
       prefix-development: "chore"
