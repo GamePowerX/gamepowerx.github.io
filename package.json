@@ -14,7 +14,7 @@
 		"@rollup/plugin-json": "^6.1.0",
 		"@rollup/plugin-node-resolve": "^16.0.1",
 		"@sveltejs/adapter-static": "^3.0.9",
-		"@sveltejs/kit": "^2.43.5",
+		"@sveltejs/kit": "^2.43.6",
 		"prettier": "^3.6.2",
 		"prettier-plugin-svelte": "^3.4.0",
 		"rollup": "^4.52.3",
@@ -22,7 +22,7 @@
 		"svelte-check": "^4.3.2",
 		"svelte-preprocess": "^6.0.3",
 		"tslib": "^2.8.1",
-		"typescript": "^5.9.2",
+		"typescript": "^5.9.3",
 		"vite": "^7.1.7"
 	},
 	"type": "module",
