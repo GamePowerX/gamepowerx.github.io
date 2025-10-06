@@ -139,7 +139,7 @@
 		<span class="comment"> //</span>
 		<span class="comment"> // Note: underlined = clickable</span>
 
-		<span />
+		<span></span>
 
 		{#each projects as project, i}
 			{#each project.description as description}
@@ -160,7 +160,7 @@
 			{/each}
 			<span>&rbrace;);</span>
 			{#if i + 1 !== projects.length}
-				<span />
+				<span></span>
 			{/if}
 		{/each}
 	</code>
