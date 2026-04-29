@@ -42,6 +42,24 @@
 			],
 		},
 		{
+			name: "FileLinkKekUpload",
+			license: "GPL-3.0",
+			description: [
+				"FileLinkKekUpload is a Thunderbird add-on",
+				"for uploading attachments to KekUpload.",
+			],
+			links: [
+				{
+					url: "https://addons.thunderbird.net/en-US/thunderbird/addon/filelinkkekupload/",
+					name: "thunderbird_addon",
+				},
+				{
+					url: "https://github.com/GamePowerX/fileLinkKekUpload",
+					name: "github",
+				},
+			],
+		},
+		{
 			name: "svelte-ogl",
 			license: "MIT",
 			description: ["SvelteOGL is a typed port of OGL", "(Open Graphics Library) to svelte"],
