@@ -22,7 +22,7 @@
 		<br />
 
 		<p>
-			Made by
+			Originally made by
 			<a class="kek" href="https://lbirkert.com">Lucas Birkert</a>
 		</p>
 
