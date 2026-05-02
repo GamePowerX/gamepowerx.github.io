@@ -4,18 +4,32 @@
 		url: string;
 		primary?: boolean;
 	};
+	type DownloadTag = "server" | "app" | "add-on" | "library" | "tool" | "legacy";
+	type DownloadFilter = DownloadTag | "all";
 
 	type DownloadProject = {
 		name: string;
 		description: string;
 		note?: string;
+		tags: DownloadTag[];
 		links: DownloadLink[];
 	};
+
+	const filters: Array<{ label: string; value: DownloadFilter }> = [
+		{ label: "all", value: "all" },
+		{ label: "servers", value: "server" },
+		{ label: "apps", value: "app" },
+		{ label: "add_ons", value: "add-on" },
+		{ label: "libraries", value: "library" },
+		{ label: "tools", value: "tool" },
+		{ label: "legacy", value: "legacy" },
+	];
 
 	const downloads: DownloadProject[] = [
 		{
 			name: "KekUploadServer",
 			description: "Server binaries and release assets for self-hosted KekUpload instances.",
+			tags: ["server"],
 			links: [
 				{
 					name: "latest_release",
@@ -35,6 +49,7 @@
 		{
 			name: "KekUploadApp",
 			description: "Desktop app builds for uploading files to a KekUploadServer instance.",
+			tags: ["app"],
 			links: [
 				{
 					name: "github_releases",
@@ -46,6 +61,7 @@
 		{
 			name: "KekUploadCLIClient",
 			description: "Command line client binaries for Linux, macOS, and Windows.",
+			tags: ["app"],
 			links: [
 				{
 					name: "latest_release",
@@ -61,6 +77,7 @@
 		{
 			name: "FileLinkKekUpload",
 			description: "Thunderbird add-on for uploading attachments to KekUpload.",
+			tags: ["add-on"],
 			links: [
 				{
 					name: "thunderbird_addon",
@@ -72,6 +89,7 @@
 		{
 			name: "KekUploadLibrary",
 			description: "C# library package for integrating with KekUpload.",
+			tags: ["library"],
 			links: [
 				{
 					name: "nuget_package",
@@ -87,6 +105,7 @@
 		{
 			name: "KekUploadServerApi",
 			description: "NuGet package for the KekUploadServer plugin API.",
+			tags: ["library"],
 			links: [
 				{
 					name: "nuget_package",
@@ -98,6 +117,7 @@
 		{
 			name: "KekUploadDatabaseConversionTool",
 			description: "Database conversion tool with Linux, macOS, and Windows release assets.",
+			tags: ["tool"],
 			links: [
 				{
 					name: "github_releases",
@@ -109,6 +129,7 @@
 		{
 			name: "kekupload-server",
 			description: "Rust backend release tags for the older KekUpload implementation.",
+			tags: ["legacy", "server"],
 			links: [
 				{
 					name: "github_releases",
@@ -119,7 +140,8 @@
 		},
 		{
 			name: "kekupload-client",
-			description: "Svelte frontend release tags for the older KekUpload implementation.",
+			description: "Svelte frontend release tags for KekUpload.",
+			tags: ["app"],
 			links: [
 				{
 					name: "github_releases",
@@ -130,7 +152,8 @@
 		},
 		{
 			name: "kekupload-lib-ts",
-			description: "TypeScript library package for the older KekUpload implementation.",
+			description: "TypeScript library package for KekUpload.",
+			tags: ["library"],
 			links: [
 				{
 					name: "npm_package",
@@ -146,6 +169,7 @@
 		{
 			name: "pipe-to-release",
 			description: "GitHub Action for uploading files to releases and creating releases.",
+			tags: ["tool"],
 			links: [
 				{
 					name: "marketplace",
@@ -159,6 +183,29 @@
 			],
 		},
 	];
+
+	let query = "";
+	let selectedFilter: DownloadFilter = "all";
+
+	$: normalizedQuery = query.trim().toLowerCase();
+	$: filteredDownloads = downloads.filter((project) => {
+		const matchesFilter = selectedFilter === "all" || project.tags.includes(selectedFilter);
+		const searchText = [
+			project.name,
+			project.description,
+			...project.tags,
+			...project.links.map((link) => link.name),
+		]
+			.join(" ")
+			.toLowerCase();
+
+		return matchesFilter && (!normalizedQuery || searchText.includes(normalizedQuery));
+	});
+
+	function clearFilters() {
+		query = "";
+		selectedFilter = "all";
+	}
 </script>
 
 <svelte:head>
@@ -172,32 +219,123 @@
 	release and package pages.
 </p>
 
-<section class="downloads" aria-label="Project downloads">
-	{#each downloads as project}
-		<article>
-			<div class="title">
-				<h2>{project.name}</h2>
-			</div>
+<div class="filters" aria-label="Download filters">
+	<label>
+		<span>filter_downloads</span>
+		<input bind:value={query} type="search" placeholder="Search downloads" />
+	</label>
 
-			<p>{project.description}</p>
+	<div class="filter-buttons" aria-label="Download categories">
+		{#each filters as filter}
+			<button
+				class:active={selectedFilter === filter.value}
+				type="button"
+				aria-pressed={selectedFilter === filter.value}
+				onclick={() => (selectedFilter = filter.value)}>{filter.label}</button
+			>
+		{/each}
+	</div>
 
-			{#if project.note}
-				<p class="note">{project.note}</p>
-			{/if}
+	{#if query || selectedFilter !== "all"}
+		<button class="clear" type="button" onclick={clearFilters}>clear_filters</button>
+	{/if}
+</div>
 
-			<div class="links">
-				{#each project.links as link}
-					<a class:primary={link.primary} href={link.url}>{link.name}</a>
-				{/each}
-			</div>
-		</article>
-	{/each}
-</section>
+<p class="result-count">{filteredDownloads.length} of {downloads.length} downloads</p>
+
+{#if filteredDownloads.length > 0}
+	<section class="downloads" aria-label="Project downloads">
+		{#each filteredDownloads as project (project.name)}
+			<article>
+				<div class="title">
+					<h2>{project.name}</h2>
+				</div>
+
+				<p>{project.description}</p>
+
+				{#if project.note}
+					<p class="note">{project.note}</p>
+				{/if}
+
+				<div class="links">
+					{#each project.links as link}
+						<a class:primary={link.primary} href={link.url}>{link.name}</a>
+					{/each}
+				</div>
+			</article>
+		{/each}
+	</section>
+{:else}
+	<p class="empty">No downloads match the selected filters.</p>
+{/if}
 
 <style>
 	.intro {
 		max-width: 650px;
 		margin-top: 10px;
+	}
+
+	.filters {
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		border-radius: 5px;
+		display: grid;
+		gap: 12px;
+		margin-top: 24px;
+		padding: 14px;
+	}
+
+	.filters label {
+		display: grid;
+		gap: 6px;
+	}
+
+	.filters label span {
+		color: #ffcc00;
+		font-size: 14px;
+	}
+
+	input {
+		background: black;
+		border: 1px solid #aa8800;
+		border-radius: 5px;
+		color: white;
+		font-size: 14px;
+		padding: 8px 10px;
+		width: 100%;
+	}
+
+	input:focus-visible {
+		outline: 2px solid #ffcc00;
+		outline-offset: 2px;
+	}
+
+	.filter-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.filter-buttons button,
+	.clear {
+		font-size: 13px;
+		padding: 5px 9px;
+	}
+
+	.filter-buttons button.active {
+		background: #ffcc00;
+		border-color: #ffcc00;
+		color: black;
+	}
+
+	.clear {
+		justify-self: start;
+	}
+
+	.result-count,
+	.empty {
+		color: #aa8800;
+		font-size: 14px;
+		margin-top: 12px;
 	}
 
 	.downloads {
