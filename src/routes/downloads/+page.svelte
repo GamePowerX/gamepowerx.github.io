@@ -295,13 +295,17 @@
 	}
 
 	input {
-		background: black;
+		background: #000000;
 		border: 1px solid #aa8800;
 		border-radius: 5px;
-		color: white;
+		color: #ffffff;
 		font-size: 14px;
 		padding: 8px 10px;
 		width: 100%;
+	}
+
+	input::placeholder {
+		color: #aaaaaa;
 	}
 
 	input:focus-visible {
@@ -324,7 +328,7 @@
 	.filter-buttons button.active {
 		background: #ffcc00;
 		border-color: #ffcc00;
-		color: black;
+		color: #000000;
 	}
 
 	.clear {
@@ -393,7 +397,12 @@
 	a:hover {
 		background: #ffcc00;
 		border-color: #ffcc00;
-		color: black;
+		color: #000000;
+	}
+
+	a.primary:hover,
+	a.primary:focus-visible {
+		border-color: #aa8800;
 	}
 
 	@media (min-width: 700px) {
