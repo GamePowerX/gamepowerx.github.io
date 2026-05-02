@@ -42,6 +42,46 @@
 			],
 		},
 		{
+			name: "KekUploadServer",
+			license: "GPL-3.0",
+			description: ["A new version of the KekUploadServer"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/KekUploadServer",
+					name: "github",
+				},
+				{
+					url: "https://newupload.gamepowerx.com",
+					name: "demo",
+				},
+			],
+		},
+		{
+			name: "KekUploadApp",
+			license: "GPL-3.0",
+			description: [
+				"KekUploadApp is a simple app for uploading files",
+				"to a KekUploadServer instance.",
+			],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/KekUploadApp",
+					name: "github",
+				},
+			],
+		},
+		{
+			name: "KekUploadCLIClient",
+			license: "GPL-3.0",
+			description: ["A simple CLI client for UploadServer"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/KekUploadCLIClient",
+					name: "github",
+				},
+			],
+		},
+		{
 			name: "FileLinkKekUpload",
 			license: "GPL-3.0",
 			description: [
@@ -60,17 +100,76 @@
 			],
 		},
 		{
-			name: "svelte-ogl",
-			license: "MIT",
-			description: ["SvelteOGL is a typed port of OGL", "(Open Graphics Library) to svelte"],
+			name: "KekUploadLibrary",
+			license: "GPL-3.0",
+			description: ["A simple C# Library for UploadServer"],
 			links: [
 				{
-					url: "https://github.com/GamePowerX/svelte-ogl",
+					url: "https://github.com/GamePowerX/KekUploadLibrary",
 					name: "github",
 				},
 				{
-					url: "https://gamepowerx.com/svelte-ogl/",
-					name: "demo",
+					url: "https://www.nuget.org/packages/CraftingDragon007.KekUploadLibrary",
+					name: "nuget",
+				},
+			],
+		},
+		{
+			name: "KekUploadServerApi",
+			license: "MIT",
+			description: ["Plugin API for KekUploadServer C#"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/KekUploadServerApi",
+					name: "github",
+				},
+				{
+					url: "https://www.nuget.org/packages/GamePowerX.KekUploadServerApi/",
+					name: "nuget",
+				},
+			],
+		},
+		{
+			name: "KekUploadServerFileLogging",
+			license: "MIT",
+			description: ["A plugin for KekUploadServer to save", "the log into files"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/KekUploadServerFileLogging",
+					name: "github",
+				},
+			],
+		},
+		{
+			name: "KekUploadServerGUI",
+			license: "MIT",
+			description: ["A plugin for KekUploadServer that adds a GUI"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/KekUploadServerGUI",
+					name: "github",
+				},
+			],
+		},
+		{
+			name: "KekUploadDatabaseConversionTool",
+			license: "GPL-3.0",
+			description: [],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/KekUploadDatabaseConversionTool",
+					name: "github",
+				},
+			],
+		},
+		{
+			name: "kekupload-e2e",
+			license: "No license",
+			description: ["End To End Tests for KekUploadServer", "and clients"],
+			links: [
+				{
+					url: "https://github.com/GamePowerX/kekupload-e2e",
+					name: "github",
 				},
 			],
 		},
@@ -93,27 +192,13 @@
 			],
 		},
 		{
-			name: "IDirekt",
-			license: "MIT",
-			description: [
-				"IDirekt is a utility to forward emails from",
-				"IServ via an external SMTP server",
-			],
+			name: "qBittorrent-Enhanced-Edition-Alpha",
+			license: "GPL-2.0-or-later + OpenSSL exception",
+			description: ["qBittorrent BitTorrent client"],
 			links: [
 				{
-					url: "https://github.com/GamePowerX/IDirekt",
+					url: "https://github.com/GamePowerX/qBittorrent-Enhanced-Edition-Alpha",
 					name: "github",
-				},
-			],
-		},
-		{
-			name: "KeloCAM",
-			license: "MIT",
-			description: ["KeloCAM will be an opensource simple-to-use", "CAM software for hobbyists"],
-			links: [
-				{
-					url: "#",
-					name: "soon_tm",
 				},
 			],
 		},
