@@ -182,6 +182,22 @@
 				},
 			],
 		},
+		{
+			name: "qBittorrent-Enhanced-Edition-Alpha",
+			description: "qBittorrent Enhanced Edition alpha builds for Linux and Windows.",
+			tags: ["app"],
+			links: [
+				{
+					name: "latest_release",
+					url: "https://github.com/GamePowerX/qBittorrent-Enhanced-Edition-Alpha/releases/latest",
+					primary: true,
+				},
+				{
+					name: "all_releases",
+					url: "https://github.com/GamePowerX/qBittorrent-Enhanced-Edition-Alpha/releases",
+				},
+			],
+		},
 	];
 
 	let query = "";
