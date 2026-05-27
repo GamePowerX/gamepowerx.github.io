@@ -29,8 +29,8 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
 
-      - name: Use latest pnpm 11
-        run: corepack prepare pnpm@latest-11 --activate
+      - name: Use latest pnpm 10
+        run: corepack prepare pnpm@latest-10 --activate
 
       - name: Get pnpm store path
         shell: bash
