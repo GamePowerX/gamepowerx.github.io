@@ -3,7 +3,15 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Zurich"
+    open-pull-requests-limit: 1
+    cooldown:
+      semver-patch-days: 7
+      semver-minor-days: 14
+      semver-major-days: 30
     labels:
       - "dependencies"
       - "npm"
@@ -23,7 +31,13 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
+      time: "09:15"
+      timezone: "Europe/Zurich"
+    open-pull-requests-limit: 1
+    cooldown:
+      default-days: 14
     labels:
       - "dependencies"
       - "github-actions"
