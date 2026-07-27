@@ -19,7 +19,7 @@
 		"@sveltejs/kit": "^2.70.1",
 		"@sveltejs/vite-plugin-svelte": "^7.2.0",
 		"@types/node": "^26.1.1",
-		"cookie": "^1.1.1",
+		"cookie": "^2.0.0",
 		"devalue": "^5.8.1",
 		"prettier": "^3.9.5",
 		"prettier-plugin-svelte": "^4.1.1",
